@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mumiopad - Privacy Policy / 隱私權政策</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 24px; color: #222; }
+        h1 { color: #007AFF; border-bottom: 2px solid #007AFF; padding-bottom: 10px; }
+        h2 { color: #333; margin-top: 30px; }
+        h3 { color: #007AFF; }
+        .lang-section { margin-bottom: 40px; padding-bottom: 20px; border-bottom: 1px solid #eee; }
+        code { background: #f4f4f4; padding: 2px 6px; border-radius: 4px; font-family: monospace; }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 12px; }
+    </style>
+</head>
+<body>
+    <h1>Mumiopad Privacy Policy / 隱私權政策</h1>
+    <p><strong>Last Updated / 最後更新日期:</strong> 2026-07-25</p>
+
+    <!-- 繁體中文版 -->
+    <div class="lang-section">
+        <h2>繁體中文</h2>
+        <p>歡迎使用 <strong>Mumiopad</strong>（以下簡稱「本應用程式」）。我們非常重視您的個人隱私。本隱私權政策旨在說明我們如何處理應用程式運作時所需的權限與資料。</p>
+
+        <h3>1. 資料收集與使用聲明</h3>
+        <p>本應用程式為<strong>純本地端（Local LAN / Bluetooth）工具</strong>，我們<strong>不會</strong>將您的任何個人資料、位置資訊或裝置識別碼收集、傳送、儲存或分享至任何遠端第三方伺服器或追蹤機構。</p>
+
+        <h3>2. 關鍵權限使用說明</h3>
+        <ul>
+            <li><strong>位置權限 (<code>ACCESS_FINE_LOCATION</code> / <code>ACCESS_COARSE_LOCATION</code>)：</strong><br>
+            Android 系統政策規定，讀取 Wi-Fi 路由器識別碼（BSSID）必須獲取位置權限。本應用程式獲取 BSSID <strong>僅用於在裝置本地端辨識當前連接的 Wi-Fi 網路</strong>，以實現自動連線至預設電腦之功能。我們<strong>絕不收集、記錄、追蹤或傳送</strong>使用者的實際地理位置座標。</li>
+
+            <li><strong>藍牙權限 (<code>BLUETOOTH_CONNECT</code> / <code>BLUETOOTH_ADVERTISE</code>)：</strong><br>
+            僅用於提供藍牙 HID 虛擬觸控板與鍵盤模擬功能，與您的電腦進行區域藍牙連線控制。</li>
+
+            <li><strong>網路與鄰近裝置權限 (<code>INTERNET</code> / <code>NEARBY_WIFI_DEVICES</code>)：</strong><br>
+            僅用於在您的區域網路（LAN）內進行 WebSocket 傳輸與 mDNS 服務搜尋，以連接您的電腦端伺服器。</li>
+        </ul>
+
+        <h3>3. 資料儲存與安全</h3>
+        <p>所有連線配對金鑰 (Tokens) 與偏好設定均使用 Android 系統安全加密機制（<code>EncryptedSharedPreferences</code>）儲存於您的裝置本地端，絕不上傳至任何雲端。</p>
+
+        <h3>4. 聯絡我們</h3>
+        <p>若您對本隱私權政策有任何疑問，歡迎透過我們的 GitHub 專案頁面發起 Issue 聯繫開發團隊。</p>
+    </div>
+
+    <!-- English Version (For Google Play Reviewers) -->
+    <div class="lang-section">
+        <h2>English</h2>
+        <p>Welcome to <strong>Mumiopad</strong> ("the App"). We respect your privacy and are committed to protecting it. This Privacy Policy explains how our App handles permissions and data.</p>
+
+        <h3>1. Data Collection and Usage</h3>
+        <p>Mumiopad is a <strong>local-only remote touchpad and virtual input application</strong>. We <strong>do not collect, store, transmit, or share</strong> any personal data, location coordinates, or device identifiers to any external servers or third-party services.</p>
+
+        <h3>2. Permission Explanations</h3>
+        <ul>
+            <li><strong>Location Permissions (<code>ACCESS_FINE_LOCATION</code> / <code>ACCESS_COARSE_LOCATION</code>):</strong><br>
+            Required by Android OS policy to access Wi-Fi network details (BSSID). Mumiopad uses BSSID <strong>strictly on your local device</strong> to identify current Wi-Fi routers for auto-connecting to saved PC profiles. We <strong>never collect, track, record, or transmit</strong> your physical GPS/location coordinates.</li>
+
+            <li><strong>Bluetooth Permissions (<code>BLUETOOTH_CONNECT</code> / <code>BLUETOOTH_ADVERTISE</code>):</strong><br>
+            Used exclusively to establish a Bluetooth HID virtual touchpad/keyboard connection with your PC locally.</li>
+
+            <li><strong>Network Permissions (<code>INTERNET</code> / <code>NEARBY_WIFI_DEVICES</code>):</strong><br>
+            Used solely for local area network (LAN) communication (WebSocket & mDNS discovery) with your PC server software.</li>
+        </ul>
+
+        <h3>3. Data Storage and Security</h3>
+        <p>All pairing credentials and settings are encrypted and stored locally on your device using Android's <code>EncryptedSharedPreferences</code>. No data is ever sent to external cloud servers.</p>
+
+        <h3>4. Contact Us</h3>
+        <p>If you have any questions regarding this Privacy Policy, please contact us via our GitHub Repository issues page.</p>
+    </div>
+</body>
+</html>
