@@ -1,1 +1,1 @@
-# mumiopad-privacy-policy
+# Mumio Privacy Policy
