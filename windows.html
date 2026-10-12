@@ -4,45 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Privacy policy for Mumio Server, the Windows wireless touchpad and keyboard companion. Mumio Server Windows 桌面版隱私權政策。">
-    <title>Mumio Server Privacy Policy / Windows 桌面版隱私權政策</title>
-    <style>
-        :root { color-scheme: light dark; --background: #fff; --text: #222; --heading: #333; --accent: #0066cc; --border: #ddd; --code: #f4f4f4; }
-        @media (prefers-color-scheme: dark) { :root { --background: #15171a; --text: #e5e7eb; --heading: #f3f4f6; --accent: #8ab4ff; --border: #42464d; --code: #252932; } }
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.65; max-width: 860px; margin: 0 auto; padding: 24px; background: var(--background); color: var(--text); overflow-wrap: anywhere; }
-        h1 { color: var(--accent); border-bottom: 2px solid var(--accent); padding-bottom: 10px; line-height: 1.35; }
-        h2 { color: var(--heading); margin-top: 30px; }
-        h3 { color: var(--accent); }
-        section { margin-bottom: 44px; padding-bottom: 24px; border-bottom: 1px solid var(--border); }
-        code { background: var(--code); padding: 2px 6px; border-radius: 4px; }
-        ul { padding-left: 22px; }
-        li { margin-bottom: 10px; }
-        a { color: var(--accent); }
-        a:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
-        nav a + a { margin-left: 20px; }
-        @media (max-width: 480px) { body { padding: 16px; } h1 { font-size: 1.75rem; } }
-    </style>
+    <title>Mumio Server Windows Privacy Policy / Mumio Server Windows 隱私權政策</title>
+    <link rel="stylesheet" href="policy.css">
 </head>
 <body>
     <header>
-        <h1>Mumio Server Privacy Policy<br>Windows 桌面版隱私權政策</h1>
+        <h1>Mumio Server Windows Privacy Policy<br>Mumio Server Windows 隱私權政策</h1>
         <p><strong>Last Updated / 最後更新日期:</strong> <time datetime="2026-10-12">2026-10-12</time></p>
+        <nav aria-label="Policies / 政策"><a href="index.html">Android</a><a href="windows.html" aria-current="page">Windows</a></nav>
         <nav aria-label="Language / 語言"><a href="#zh-TW" lang="zh-TW">繁體中文</a><a href="#en" lang="en">English</a></nav>
     </header>
     <main>
         <section lang="zh-TW" aria-labelledby="zh-TW">
             <h2 id="zh-TW">繁體中文</h2>
-            <p>本政策適用於 <strong>Mumio Server Windows 桌面程式</strong>，包含 Microsoft Store 版與官方直接下載版。Mumio Server 接收使用者主動從配對手機傳來的指令，提供電腦滑鼠與鍵盤控制。Android 行動應用程式另適用於<a href="index.html">原有的 Mumio 隱私權政策</a>。</p>
+            <p>本政策適用於 <strong>Mumio Server Windows 桌面程式</strong>，包含 Microsoft Store 版與官方直接下載版。Mumio Server 接收使用者主動從配對手機傳來的指令，提供電腦滑鼠與鍵盤控制。Android 行動應用程式另適用於 <a href="index.html">Mumio Android 隱私權政策</a>。</p>
 
             <h3>1. 資料處理原則</h3>
-            <p>Mumio Server 不要求建立使用者帳號，程式不內建廣告、分析或遙測服務。滑鼠與鍵盤控制資料透過區域網路在您選擇的手機與電腦之間傳輸，不會自動傳送給開發者，也不會被出售或用於廣告。輸入文字、剪貼簿文字及裝置名稱可能包含個人資訊，因此本政策說明程式如何存取與處理這些資料。</p>
+            <p>Mumio Server 不要求建立使用者帳號，程式不內建廣告、分析或遙測服務。滑鼠與鍵盤控制資料透過您配置的網路連線在所選手機與電腦之間傳輸，通常為區域網路，也可能經 VPN 或其他可達網路；不會自動傳送給開發者，也不會被出售或用於廣告。輸入文字、剪貼簿文字及裝置名稱可能包含個人資訊，因此本政策說明程式如何存取與處理這些資料。</p>
 
             <h3>2. 存取與處理的資料及用途</h3>
             <ul>
-                <li><strong>區域網路連線與探索：</strong>程式處理電腦與連線手機的區域 IP 位址，以建立連線及防止配對濫用。程式使用 mDNS 公告電腦名稱、區域 IP、伺服器識別碼、服務埠與支援的協定版本；同一區域網路中的裝置可接收這些探索資訊。</li>
+                <li><strong>網路連線與區域探索：</strong>程式處理電腦與連線手機的 IP 位址，以建立連線及防止配對濫用。程式使用 mDNS 公告電腦名稱、區域 IP、伺服器識別碼、服務埠與支援的協定版本；同一區域網路中的裝置可接收這些探索資訊。</li>
                 <li><strong>配對與設定：</strong>程式在電腦本機保存伺服器 UUID、TLS 金鑰及憑證、已配對手機名稱、配對裝置識別碼、配對 token 的 SHA-256 雜湊、最後連線時間及使用者設定，例如介面語言。這些資料用於辨識已授權裝置、保護連線及保留設定。</li>
                 <li><strong>滑鼠與鍵盤輸入：</strong>程式接收並執行手機送來的移動、點擊、捲動、手勢、按鍵及文字指令，將輸入送至您正在控制的 Windows 應用程式。程式不建立或保存控制內容與輸入文字的歷史紀錄。</li>
                 <li><strong>剪貼簿文字：</strong>為完成文字貼上，程式會讀取當時可讀取的 Windows 剪貼簿文字，暫時將手機傳來的文字放入剪貼簿並執行貼上，然後嘗試還原先前的文字；沒有可還原文字時則清除暫放的內容。原有剪貼簿文字不會傳回手機或自動傳給開發者，也不會保存為剪貼簿歷史。</li>
-                <li><strong>執行與錯誤資訊：</strong>程式在執行期間處理連線狀態與錯誤訊息，可能包括裝置名稱、區域 IP 或錯誤細節，用於呈現狀態及處理連線問題。程式不會自動將這些訊息上傳給開發者。</li>
+                <li><strong>執行與錯誤資訊：</strong>程式在執行期間處理連線狀態與錯誤訊息，可能包括裝置名稱、IP 位址或錯誤細節，用於呈現狀態及處理連線問題。程式不會自動將這些訊息上傳給開發者。</li>
             </ul>
             <p>文字可能包含您主動輸入的姓名、電話或其他個人資訊。貼上後，目標 Windows 應用程式以及 Windows 剪貼簿歷程或同步功能（若您啟用）如何保存或傳輸文字，取決於其功能、設定與隱私權政策。</p>
 
@@ -77,18 +63,18 @@
 
         <section lang="en" aria-labelledby="en">
             <h2 id="en">English</h2>
-            <p>This policy applies to <strong>Mumio Server for Windows</strong>, including the Microsoft Store edition and the official direct-download edition. Mumio Server receives commands that you intentionally send from a paired phone to control your PC's mouse and keyboard. The Android mobile app is covered by the <a href="index.html">existing Mumio privacy policy</a>.</p>
+            <p>This policy applies to <strong>Mumio Server for Windows</strong>, including the Microsoft Store edition and the official direct-download edition. Mumio Server receives commands that you intentionally send from a paired phone to control your PC's mouse and keyboard. The Android mobile app is covered by the <a href="index.html">Mumio Android privacy policy</a>.</p>
 
             <h3>1. Data Processing Principles</h3>
-            <p>Mumio Server does not require a user account and has no built-in advertising, analytics, or telemetry services. Mouse and keyboard control data travels over your local network between your chosen phone and PC. It is not automatically sent to the developer, sold, or used for advertising. Input text, clipboard text, and device names may contain personal information, so this policy explains how the application accesses and processes them.</p>
+            <p>Mumio Server does not require a user account and has no built-in advertising, analytics, or telemetry services. Mouse and keyboard control data travels between your chosen phone and PC over the network connection you configure, usually a local network but potentially a VPN or another reachable network. It is not automatically sent to the developer, sold, or used for advertising. Input text, clipboard text, and device names may contain personal information, so this policy explains how the application accesses and processes them.</p>
 
             <h3>2. Data Accessed and Processed, and Its Purpose</h3>
             <ul>
-                <li><strong>Local network connections and discovery:</strong> The application processes the PC's and connecting phone's local IP addresses to establish connections and prevent pairing abuse. Through mDNS, it advertises the PC name, local IP addresses, server identifier, service port, and supported protocol versions. Devices on the same local network can receive this discovery information.</li>
+                <li><strong>Network connections and local discovery:</strong> The application processes the PC's and connecting phone's IP addresses to establish connections and prevent pairing abuse. Through mDNS, it advertises the PC name, local IP addresses, server identifier, service port, and supported protocol versions. Devices on the same local network can receive this discovery information.</li>
                 <li><strong>Pairing and preferences:</strong> The application stores the server UUID, TLS key and certificate, paired phone names, pairing device identifiers, SHA-256 hashes of pairing tokens, last-connection times, and preferences such as interface language locally on the PC. These data identify authorized devices, protect connections, and preserve preferences.</li>
                 <li><strong>Mouse and keyboard input:</strong> The application receives and executes movement, click, scroll, gesture, key, and text commands from the phone, sending input to the Windows application you are controlling. It does not create or retain a history of control content or input text.</li>
                 <li><strong>Clipboard text:</strong> To paste text, the application reads the Windows clipboard text that is accessible at that moment, temporarily places text received from the phone on the clipboard, and pastes it. It then attempts to restore the previous text, or clears the temporary content when no text can be restored. Existing clipboard text is not sent back to the phone or automatically sent to the developer, and the application does not save a clipboard history.</li>
-                <li><strong>Runtime and error information:</strong> During execution, the application processes connection status and error messages, which may include device names, local IP addresses, or error details, to display status and handle connection problems. It does not automatically upload these messages to the developer.</li>
+                <li><strong>Runtime and error information:</strong> During execution, the application processes connection status and error messages, which may include device names, IP addresses, or error details, to display status and handle connection problems. It does not automatically upload these messages to the developer.</li>
             </ul>
             <p>Text may include names, telephone numbers, or other personal information that you intentionally enter. After pasting, how the destination Windows application or Windows clipboard history or synchronization features (if you enable them) retain or transmit text depends on their features, settings, and privacy policies.</p>
 

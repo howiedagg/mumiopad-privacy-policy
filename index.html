@@ -3,101 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mumio Privacy Policy / Mumio 隱私權政策</title>
-    <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.65; max-width: 860px; margin: 0 auto; padding: 24px; color: #222; }
-        h1 { color: #007AFF; border-bottom: 2px solid #007AFF; padding-bottom: 10px; }
-        h2 { color: #333; margin-top: 30px; }
-        h3 { color: #007AFF; }
-        .lang-section { margin-bottom: 44px; padding-bottom: 24px; border-bottom: 1px solid #eee; }
-        code { background: #f4f4f4; padding: 2px 6px; border-radius: 4px; font-family: monospace; }
-        ul { padding-left: 22px; }
-        li { margin-bottom: 10px; }
-        a { color: #0066cc; }
-    </style>
+    <meta name="description" content="Privacy policy for the Mumio Android wireless touchpad and keyboard app and its connections to companion devices. Mumio Android 隱私權政策。">
+    <title>Mumio Android Privacy Policy / Mumio Android 隱私權政策</title>
+    <link rel="stylesheet" href="policy.css">
 </head>
 <body>
-    <h1>Mumio Privacy Policy / Mumio 隱私權政策</h1>
-    <p><strong>Last Updated / 最後更新日期:</strong> 2026-08-29</p>
+    <header>
+        <h1>Mumio Android Privacy Policy<br>Mumio Android 隱私權政策</h1>
+        <p><strong>Last Updated / 最後更新日期:</strong> <time datetime="2026-10-12">2026-10-12</time></p>
+        <nav aria-label="Policies / 政策"><a href="index.html" aria-current="page">Android</a><a href="windows.html">Windows</a></nav>
+        <nav aria-label="Language / 語言"><a href="#zh-TW" lang="zh-TW">繁體中文</a><a href="#en" lang="en">English</a></nav>
+    </header>
+    <main>
+        <section lang="zh-TW" aria-labelledby="zh-TW">
+            <h2 id="zh-TW">繁體中文</h2>
+            <p>本政策適用於 <strong>Mumio Android 行動應用程式</strong>（原名 Mumiopad），說明手機端資料處理及與所選裝置之間的滑鼠、鍵盤控制。Wi-Fi 模式使用電腦上的 Mumio Server；電腦端的詳細儲存、更新與刪除方式見 <a href="windows.html">Mumio Server Windows 隱私權政策</a>。</p>
 
-    <div class="lang-section">
-        <h2>繁體中文</h2>
-        <p><strong>Mumio</strong>（原名 Mumiopad）包含 Android 行動應用程式與 Windows 電腦端程式 <strong>Mumio Server</strong>。本政策說明產品為提供無線觸控板與鍵盤功能而處理的資料、權限及使用者控制。</p>
+            <h3>1. 資料處理原則</h3>
+            <p>Mumio 不要求建立使用者帳號，程式不內建廣告、分析或遙測服務，也不出售控制內容。滑鼠與鍵盤指令送到您選擇的裝置，不會自動上傳給開發者。輸入文字、語音、裝置名稱及網路識別資訊可能包含個人或敏感資訊；系統語音辨識、主機名稱解析、政策網頁與您主動提出的支援請求可能涉及其他服務，詳見下文。</p>
 
-        <h3>1. 核心隱私原則</h3>
-        <p>Mumio 不提供使用者帳號，不使用廣告、分析或遙測服務，也不會將控制內容出售或提供給開發者。核心控制資料只會在使用者自己的手機與所選裝置之間，透過區域網路或藍牙傳輸。</p>
+            <h3>2. 存取與處理的資料及用途</h3>
+            <ul>
+                <li><strong>連線與探索：</strong>App 接收區域網路 mDNS 探索資訊，包括電腦名稱、IP、伺服器識別碼、服務埠及協定版本，以尋找可連線電腦。Wi-Fi 控制透過您選擇的網路地址建立連線，通常使用區域網路，也可能經您配置的 VPN 或其他可達網路；藍牙模式透過系統已配對裝置提供 HID 滑鼠與鍵盤控制。</li>
+                <li><strong>手機名稱：</strong>App 在 Wi-Fi 配對及重新認證時，將系統設定的手機裝置名稱傳給所選電腦；無法取得可用名稱時，才使用廠牌與型號等預設名稱。名稱用於辨識與管理已授權手機；自訂名稱可能包含姓名。</li>
+                <li><strong>配對、地址與設定：</strong>App 在手機保存電腦名稱、UUID、配對 token、TLS 公鑰 pin、設定的 IP／主機名稱與埠、成功連線地址及其對應來源、常用／所選電腦、藍牙裝置位址與類型，以及操作偏好、手勢與布局設定。這些資料用於重新連線、裝置管理及保留設定。</li>
+                <li><strong>Wi-Fi 網路識別：</strong>取得適用權限後，App 讀取並在本機保存目前 Wi-Fi 路由器的 BSSID 與預設電腦對應，用於依網路切換連線目標。BSSID 不會送給開發者，也不用於查詢或追蹤 GPS／實際地理座標。</li>
+                <li><strong>控制與文字輸入：</strong>App 處理觸控、手勢、按鍵及您主動輸入的文字，轉成控制指令送給所選裝置。程式不建立輸入文字或控制操作的歷史紀錄。文字可能包含姓名、電話或其他個人資訊。</li>
+                <li><strong>相機與 QR：</strong>您選擇掃描連線 QR 時，App 使用相機在手機上辨識 QR，解析主機地址、埠、伺服器 UUID 及 TLS 公鑰 pin，再驗證目標電腦並進行地址設定或配對。Mumio 不保存或上傳相機照片或影片。</li>
+                <li><strong>語音輸入：</strong>您啟動語音輸入並允許麥克風後，App 呼叫手機的系統語音辨識服務。辨識文字暫留在輸入畫面，可編輯，按「送出」後才交給所選裝置。Mumio 不建立錄音檔或語音歷史；系統服務可能將音訊送到其供應者的伺服器，詳見第 7 節。關閉語音畫面或 App 進入背景時，程式會結束目前的辨識工作階段。</li>
+                <li><strong>陀螺儀：</strong>啟用相關控制功能或試用時，App 在手機上處理陀螺儀的角速度與時間資料，轉成游標等控制操作；不建立感測器歷史，也不將原始陀螺儀樣本自動上傳給開發者。</li>
+                <li><strong>診斷資訊：</strong>程式可能在 Android 診斷日誌寫入連線狀態、裝置識別碼、網路地址、藍牙位址及錯誤細節，協助排除問題；不內建自動向開發者上傳這些日誌的服務。</li>
+            </ul>
 
-        <h3>2. 處理的資料與用途</h3>
-        <ul>
-            <li><strong>區域網路探索：</strong>Mumio Server 透過 mDNS 在區域網路中公告電腦名稱、區域 IP、服務識別碼與支援的協定版本，讓手機找到可連線的電腦。配對時，手機會將製造商與型號組成的裝置名稱傳給所選電腦。Mumio Server 會在連線期間處理來源區域 IP，並可能將它記入本機錯誤紀錄。</li>
-            <li><strong>控制與鍵盤輸入：</strong>滑鼠移動、點擊、捲動、手勢、按鍵及使用者主動輸入的文字會直接傳送到被控制的裝置。Mumio 與 Mumio Server 不會將這些控制內容保存到資料庫或傳給開發者。Wi-Fi 文字輸入會在 Windows 剪貼簿中短暫放入文字以完成貼上，之後清除或還原原本可讀取的文字內容。</li>
-            <li><strong>Wi-Fi 網路識別：</strong>Android App 會在本機讀取並保存目前 Wi-Fi 路由器的 BSSID，用來記住該網路預設連線的電腦。BSSID 不會傳送給開發者，也不會用來取得或追蹤 GPS 座標。</li>
-            <li><strong>配對與裝置資料：</strong>Android App 會在本機保存電腦名稱、UUID、最後已知區域 IP、配對 token、TLS 公鑰 pin、藍牙裝置位址及使用者設定。Mumio Server 會在本機保存伺服器 UUID、TLS 身分檔、已配對手機名稱、token 的 SHA-256 雜湊、最後連線時間與語言設定。</li>
-        </ul>
+            <h3>3. Android 權限與選擇</h3>
+            <ul>
+                <li><strong>相機（<code>CAMERA</code>）：</strong>用於您主動選擇的 QR 掃描。您可拒絕此權限並手動輸入地址。</li>
+                <li><strong>麥克風（<code>RECORD_AUDIO</code>）：</strong>用於語音辨識。您可拒絕此權限並直接輸入文字。</li>
+                <li><strong>位置（<code>ACCESS_FINE_LOCATION</code> / <code>ACCESS_COARSE_LOCATION</code>）：</strong>用於取得 Android 視為位置相關資訊的 BSSID。App 不呼叫 GPS 定位；無法取得 BSSID 時，依 Wi-Fi 網路記住預設電腦的功能會受限。</li>
+                <li><strong>藍牙（<code>BLUETOOTH_CONNECT</code>，舊版 Android 使用相應藍牙權限）：</strong>用於查看與連線系統已配對的裝置、HID 控制及您要求的配對管理。拒絕後，藍牙控制功能無法使用。</li>
+                <li><strong>網路與鄰近 Wi-Fi（<code>INTERNET</code> / <code>NEARBY_WIFI_DEVICES</code>）：</strong>用於網路連線及探索。程式另使用系統網路狀態、Wi-Fi 狀態、群播及 Wi-Fi 鎖等能力，判斷連線並維持控制反應。您可在 Android 系統設定管理可撤銷的權限。</li>
+            </ul>
 
-        <h3>3. Android 權限</h3>
-        <ul>
-            <li><strong>位置權限（<code>ACCESS_FINE_LOCATION</code> / <code>ACCESS_COARSE_LOCATION</code>）：</strong>Android 將 BSSID 視為可能與位置相關的 Wi-Fi 資訊，因此讀取 BSSID 需要位置權限。Mumio 不會讀取、保存或傳輸 GPS／實際地理座標。</li>
-            <li><strong>藍牙權限（<code>BLUETOOTH_CONNECT</code>）：</strong>用於連線系統已配對的藍牙裝置，並提供藍牙 HID 滑鼠與鍵盤功能。</li>
-            <li><strong>網路與鄰近 Wi-Fi 權限（<code>INTERNET</code> / <code>NEARBY_WIFI_DEVICES</code>）：</strong>用於區域網路 WSS/TLS 通訊、mDNS 探索及連線狀態判斷。</li>
-        </ul>
+            <h3>4. 手機儲存與安全</h3>
+            <p>Wi-Fi 配對資料，包括 token 與 TLS 公鑰 pin，使用 <code>EncryptedSharedPreferences</code> 加密保存在手機。BSSID 對應、藍牙位址及一般設定保存在 App 私有儲存空間。App 在 Android Manifest 中停用一般 Android 備份，不提供 Mumio 帳號或自有雲端備份服務。</p>
+            <p>Wi-Fi 控制使用 WSS/TLS、電腦公鑰驗證、使用者確認的配對及 token 認證；藍牙控制使用 Android 系統的藍牙配對與連線機制。您可以停止控制、斷線或撤銷配對，管理裝置存取。</p>
 
-        <h3>4. 儲存與安全</h3>
-        <p>Android 的 Wi-Fi 配對憑證使用 <code>EncryptedSharedPreferences</code> 加密保存；BSSID 對應、藍牙裝置位址與一般設定則保存在 Android App 的私有儲存空間，且 App 已停用 Android 備份。Wi-Fi 控制連線使用 WSS/TLS、PC 公鑰 pin、使用者確認碼及配對 token。Mumio Server 只保存 token 的 SHA-256 雜湊，不保存原始 token。</p>
-        <p>Mumio Server 的設定、TLS 身分與本機錯誤紀錄位於目前 Windows 使用者的 <code>%APPDATA%\Mumiopad</code> 資料夾。該舊名稱為相容性識別，不代表目前產品名稱。</p>
+            <h3>5. 跨端處理與揭露</h3>
+            <p>所選電腦會處理連線來源 IP，並保存手機名稱、配對識別、token 雜湊及最後連線時間，用於驗證及管理裝置。控制指令與文字交給您正在控制的目標應用程式。Mumio Server 收到的是您送出的指令與文字，不會從這些功能收到手機的相機影像或原始錄音。</p>
+            <p>Wi-Fi 文字貼上時，Mumio Server 會讀取當時可讀取的 Windows 剪貼簿文字、暫放手機文字並執行貼上，再嘗試還原先前文字；沒有可還原文字時則清除暫放內容。原剪貼簿文字不會傳回手機或自動傳給開發者。Windows 剪貼簿歷程／同步（若啟用）及目標應用程式仍可能另行保存或傳輸文字，取決於其設定與政策。電腦端詳細方式見 <a href="windows.html">Windows 政策</a>。</p>
 
-        <h3>5. 更新與第三方服務</h3>
-        <p>Microsoft Store 版由 Microsoft Store 管理更新，不使用 Mumio Server 的外部更新程式。從官方網站直接安裝的 EXE 版會連線至 GitHub Releases 檢查及下載更新；GitHub 可能依其政策處理一般網路資料，例如 IP 位址與請求資訊。本隱私政策頁面亦由 GitHub Pages 提供，因此 GitHub 會處理提供網頁所需的連線資料。Mumio 不使用第三方廣告或分析服務。</p>
+            <h3>6. 資料保留與刪除</h3>
+            <ul>
+                <li><strong>手機資料：</strong>配對、地址、網路對應與設定保留至您移除相應紀錄、清除 App 資料或解除安裝。移除電腦配對時，也會移除指向該電腦的 BSSID 對應；您亦可在連線設定管理網路對應與地址。</li>
+                <li><strong>Wi-Fi 解除配對：</strong>連線時，App 會要求電腦撤銷配對授權，收到成功回覆後刪除手機紀錄。離線時經您確認移除，只會刪除手機紀錄，電腦上的授權仍需在 Mumio Server 移除。清除 App 資料或解除安裝也不會替您遠端刪除電腦紀錄。</li>
+                <li><strong>藍牙配對：</strong>App 解除配對時會移除自己的裝置紀錄，並嘗試透過 Android 系統解除藍牙配對。單純清除 App 資料或解除安裝不保證刪除系統配對；可在 Android 藍牙設定另行管理。</li>
+                <li><strong>文字、音訊與影像：</strong>Mumio 不建立這些內容的歷史。辨識服務、Windows 剪貼簿及目標應用程式持有的資料由其服務與設定管理；移除 Mumio 配對或 App 不會刪除這些獨立副本。</li>
+            </ul>
 
-        <h3>6. 資料保留與刪除</h3>
-        <ul>
-            <li>使用者可在 Android App 或 Mumio Server 托盤選單解除單一配對；Mumio Server 也能清除全部已配對裝置。</li>
-            <li>移除 Android App 或清除其 App 資料會刪除 Android 端保存的本機資料。</li>
-            <li>解除安裝 Mumio Server 後，Windows 本機設定可能仍保留。若要完整刪除，請先結束 Mumio Server，再刪除 <code>%APPDATA%\Mumiopad</code>。</li>
-        </ul>
+            <h3>7. 系統與第三方服務</h3>
+            <ul>
+                <li><strong>系統語音辨識：</strong>實際供應者及離線／線上處理方式取決於手機安裝的辨識服務與設定。此 App 沒有強制使用離線辨識；音訊及相關請求資訊的傳輸、保存、安全及刪除依該供應者政策。您可查看手機的語音輸入／辨識服務設定，或不用語音功能。</li>
+                <li><strong>主機名稱解析：</strong>輸入或掃描的連線地址若為主機名稱，App 使用 Android 系統解析器查詢其 IP；DNS 服務可能處理查詢的名稱與連線資訊。此查詢不包含您的控制文字、配對 token 或錄音。</li>
+                <li><strong>Google Play：</strong>透過 Google Play 安裝的版本由 Google Play 提供配送與更新，App 沒有自有更新檢查器。Google 依其服務設定及 <a href="https://policies.google.com/privacy">Google 隱私權政策</a>處理商店服務相關資料；此說明不代表手機語音辨識一定由 Google 提供。</li>
+                <li><strong>政策與支援：</strong>本頁由 GitHub Pages 提供，聯絡入口使用 GitHub Issues。GitHub 依 <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub 隱私權聲明</a>處理連線與您主動提供的資料。</li>
+            </ul>
 
-        <h3>7. 聯絡我們</h3>
-        <p>若對本政策或資料處理有疑問，請透過 <a href="https://github.com/howiedagg/Mumiopad/issues">Mumio GitHub Issues</a> 聯絡開發者。</p>
-    </div>
+            <h3>8. 聯絡開發者與政策更新</h3>
+            <p>開發者：<strong>Mumio（GitHub：howiedagg）</strong>。政策問題或適用法律下的資料存取、更正、刪除等請求，可透過 <a href="https://github.com/howiedagg/mumiopad-privacy-policy/issues">Mumio 隱私權政策 GitHub Issues</a>提出。開發者無法遠端讀取或刪除您裝置上的本機資料，您可依第 6 節自行管理。</p>
+            <p>此入口為公開討論，內容可能公開顯示。請只提供處理請求所需的資訊，不要張貼輸入文字、錄音、剪貼簿內容或配對憑證。開發者只將您主動提供的支援資料用於回覆與處理請求，自行持有的副本保留至請求處理完成且不再需要後續追蹤，之後刪除；您也可提出刪除請求。GitHub 議題的保留及刪除另受平台功能與政策影響。</p>
+            <p>本政策會隨實際資料處理方式調整，並更新本頁的最後更新日期。</p>
+        </section>
 
-    <div class="lang-section">
-        <h2>English</h2>
-        <p><strong>Mumio</strong> (formerly Mumiopad) includes the Android mobile app and the Windows companion application, <strong>Mumio Server</strong>. This policy explains the data and permissions processed to provide wireless touchpad and keyboard functionality.</p>
+        <section lang="en" aria-labelledby="en">
+            <h2 id="en">English</h2>
+            <p>This policy applies to the <strong>Mumio Android app</strong> (formerly Mumiopad), covering data processing on the phone and mouse and keyboard control of your chosen devices. Wi-Fi mode uses Mumio Server on the PC. For detailed PC storage, updates, and deletion, see the <a href="windows.html">Mumio Server Windows privacy policy</a>.</p>
 
-        <h3>1. Core Privacy Principles</h3>
-        <p>Mumio has no user accounts and uses no advertising, analytics, or telemetry services. It does not sell control data or provide it to the developer. Core control data travels only between the user's own phone and selected device over the local network or Bluetooth.</p>
+            <h3>1. Data Processing Principles</h3>
+            <p>Mumio does not require a user account, has no built-in advertising, analytics, or telemetry services, and does not sell control content. Mouse and keyboard commands are sent to your chosen device, not automatically uploaded to the developer. Input text, speech, device names, and network identifiers may contain personal or sensitive information. System speech recognition, hostname resolution, this policy page, and support requests you initiate may involve other services, as explained below.</p>
 
-        <h3>2. Data Processed and Its Purpose</h3>
-        <ul>
-            <li><strong>Local network discovery:</strong> Mumio Server advertises the PC name, local IP address, service identifier, and supported protocol version through mDNS so the phone can find it. During pairing, the phone sends a device name composed from its manufacturer and model to the selected PC. Mumio Server processes the peer's local IP during a connection and may include it in a local error log.</li>
-            <li><strong>Control and keyboard input:</strong> Pointer movement, clicks, scrolling, gestures, key commands, and text intentionally entered by the user are sent directly to the controlled device. Mumio and Mumio Server do not retain this control content in a database or send it to the developer. For Wi-Fi text input, Mumio Server temporarily places the text on the Windows clipboard to paste it, then clears it or restores the previous readable text value.</li>
-            <li><strong>Wi-Fi network identification:</strong> The Android app reads and stores the current router BSSID locally to remember which PC is preferred on that network. The BSSID is not sent to the developer and is not used to obtain or track GPS coordinates.</li>
-            <li><strong>Pairing and device data:</strong> The Android app stores the PC name, UUID, last known local IP, pairing token, TLS public-key pin, Bluetooth device addresses, and preferences locally. Mumio Server stores its server UUID, TLS identity files, paired phone names, SHA-256 token hashes, last-connection times, and language preference locally.</li>
-        </ul>
+            <h3>2. Data Accessed and Processed, and Its Purpose</h3>
+            <ul>
+                <li><strong>Connections and discovery:</strong> The app receives local mDNS discovery information, including PC names, IP addresses, server identifiers, service ports, and protocol versions, to find available PCs. Wi-Fi control connects to the network address you choose, usually on a local network, but potentially through a VPN or another reachable network you configure. Bluetooth mode uses system-paired devices for HID mouse and keyboard control.</li>
+                <li><strong>Phone name:</strong> During Wi-Fi pairing and reauthentication, the app sends the phone's system-configured device name to your chosen PC. If no usable name is available, it falls back to a default such as the manufacturer and model. This helps identify and manage authorized phones; a custom name may contain a person's name.</li>
+                <li><strong>Pairings, addresses, and preferences:</strong> The app stores PC names, UUIDs, pairing tokens, TLS public-key pins, configured IP addresses or hostnames and ports, successful connection addresses and their source associations, common or selected PCs, Bluetooth device addresses and types, and control, gesture, and layout preferences on the phone. These data support reconnection, device management, and retained preferences.</li>
+                <li><strong>Wi-Fi network identification:</strong> With the applicable permissions, the app reads and stores the current router's BSSID and preferred-PC association locally to choose a connection target by network. The BSSID is not sent to the developer or used to look up or track GPS or physical location coordinates.</li>
+                <li><strong>Control and text input:</strong> The app processes touch, gestures, keys, and text you intentionally enter, converting them into commands for your chosen device. It does not create a history of input text or control operations. Text may contain names, telephone numbers, or other personal information.</li>
+                <li><strong>Camera and QR codes:</strong> When you choose to scan a connection QR code, the app uses the camera to decode it on the phone, obtaining the host address, port, server UUID, and TLS public-key pin. It then verifies the target PC for address configuration or pairing. Mumio does not save or upload camera photos or video.</li>
+                <li><strong>Voice input:</strong> When you start voice input and allow microphone access, the app calls the phone's system speech-recognition service. Recognized text remains temporarily in the input screen for editing and is sent to the chosen device only when you select Send. Mumio does not create audio recordings or a speech history; the system service may send audio to its provider's servers, as described in Section 7. Closing the voice screen or moving the app to the background ends the current recognition session.</li>
+                <li><strong>Gyroscope:</strong> When you enable or try the relevant controls, the app processes gyroscope angular-velocity and timing data on the phone to produce cursor and other control operations. It does not create a sensor history or automatically upload raw gyroscope samples to the developer.</li>
+                <li><strong>Diagnostics:</strong> The app may write connection status, device identifiers, network addresses, Bluetooth addresses, and error details to Android diagnostic logs for troubleshooting. It has no built-in service that automatically uploads these logs to the developer.</li>
+            </ul>
 
-        <h3>3. Android Permissions</h3>
-        <ul>
-            <li><strong>Location permissions (<code>ACCESS_FINE_LOCATION</code> / <code>ACCESS_COARSE_LOCATION</code>):</strong> Android treats BSSID as Wi-Fi information that may be associated with location, so these permissions are required to read it. Mumio does not read, retain, or transmit GPS or physical location coordinates.</li>
-            <li><strong>Bluetooth permission (<code>BLUETOOTH_CONNECT</code>):</strong> Used to connect to system-paired Bluetooth devices and provide Bluetooth HID mouse and keyboard functionality.</li>
-            <li><strong>Network and nearby Wi-Fi permissions (<code>INTERNET</code> / <code>NEARBY_WIFI_DEVICES</code>):</strong> Used for local WSS/TLS communication, mDNS discovery, and connectivity checks.</li>
-        </ul>
+            <h3>3. Android Permissions and Choices</h3>
+            <ul>
+                <li><strong>Camera (<code>CAMERA</code>):</strong> Used for QR scanning you initiate. You can deny it and enter an address manually.</li>
+                <li><strong>Microphone (<code>RECORD_AUDIO</code>):</strong> Used for speech recognition. You can deny it and enter text manually.</li>
+                <li><strong>Location (<code>ACCESS_FINE_LOCATION</code> / <code>ACCESS_COARSE_LOCATION</code>):</strong> Used to obtain the BSSID, which Android treats as location-related information. The app does not request GPS positioning. Without a usable BSSID, remembering the preferred PC by Wi-Fi network is limited.</li>
+                <li><strong>Bluetooth (<code>BLUETOOTH_CONNECT</code>, or the corresponding permissions on older Android versions):</strong> Used to view and connect to system-paired devices, provide HID control, and manage pairings at your request. Bluetooth control is unavailable if permission is denied.</li>
+                <li><strong>Network and nearby Wi-Fi (<code>INTERNET</code> / <code>NEARBY_WIFI_DEVICES</code>):</strong> Used for network connections and discovery. The app also uses system network-state, Wi-Fi-state, multicast, and Wi-Fi-lock capabilities to monitor connectivity and maintain responsive control. You can manage revocable permissions in Android settings.</li>
+            </ul>
 
-        <h3>4. Storage and Security</h3>
-        <p>Android Wi-Fi pairing credentials are encrypted with <code>EncryptedSharedPreferences</code>. BSSID mappings, Bluetooth device addresses, and general preferences are stored in the app's private Android storage, and Android backup is disabled. Wi-Fi control connections use WSS/TLS, PC public-key pinning, a user-confirmed verification code, and pairing tokens. Mumio Server stores only SHA-256 hashes of tokens, not raw tokens.</p>
-        <p>Mumio Server settings, TLS identity, and local error log are stored for the current Windows user under <code>%APPDATA%\Mumiopad</code>. The legacy folder name is retained as a compatibility identifier and is not the current product name.</p>
+            <h3>4. Phone Storage and Security</h3>
+            <p>Wi-Fi pairing data, including tokens and TLS public-key pins, are encrypted on the phone with <code>EncryptedSharedPreferences</code>. BSSID associations, Bluetooth addresses, and general preferences are kept in the app's private storage. The Android manifest disables ordinary Android backup; the app provides no Mumio account or developer-operated cloud backup.</p>
+            <p>Wi-Fi control uses WSS/TLS, PC public-key verification, user-confirmed pairing, and token authentication. Bluetooth control uses Android's system pairing and connection mechanisms. You can stop control, disconnect, or revoke pairings to manage device access.</p>
 
-        <h3>5. Updates and Third-Party Services</h3>
-        <p>The Microsoft Store edition is updated by Microsoft Store and does not use Mumio Server's external updater. The direct EXE edition from the official website connects to GitHub Releases to check for and download updates. GitHub may process ordinary network data such as IP addresses and request information under its own policies. This privacy-policy page is also served by GitHub Pages, so GitHub processes the connection data needed to deliver it. Mumio uses no third-party advertising or analytics services.</p>
+            <h3>5. Cross-Device Processing and Disclosure</h3>
+            <p>Your chosen PC processes the connection's source IP address and retains the phone name, pairing identifier, token hash, and last-connection time for authentication and device management. Control commands and text are delivered to the destination application you are controlling. Through these features, Mumio Server receives your submitted commands and text, not the phone's camera images or original audio.</p>
+            <p>For Wi-Fi text pasting, Mumio Server reads accessible Windows clipboard text, temporarily inserts the phone's text, pastes it, and attempts to restore the previous text, or clears the temporary content if no text can be restored. Existing clipboard text is not returned to the phone or automatically sent to the developer. Windows clipboard history or synchronization (if enabled) and destination applications may independently retain or transmit text according to their settings and policies. See the <a href="windows.html">Windows policy</a> for PC details.</p>
 
-        <h3>6. Retention and Deletion</h3>
-        <ul>
-            <li>Users can remove an individual pairing from the Android app or Mumio Server tray menu. Mumio Server can also clear all paired devices.</li>
-            <li>Uninstalling the Android app or clearing its app data removes locally stored Android data.</li>
-            <li>Local Windows settings may remain after Mumio Server is uninstalled. To remove them completely, exit Mumio Server and delete <code>%APPDATA%\Mumiopad</code>.</li>
-        </ul>
+            <h3>6. Retention and Deletion</h3>
+            <ul>
+                <li><strong>Phone data:</strong> Pairings, addresses, network associations, and preferences remain until you remove the relevant records, clear app data, or uninstall the app. Removing a PC pairing also removes BSSID associations pointing to that PC. You can also manage network associations and addresses in connection settings.</li>
+                <li><strong>Wi-Fi unpairing:</strong> When connected, the app requests that the PC revoke pairing authorization and deletes the phone's record after a successful reply. Offline removal, after your confirmation, deletes only the phone's record; authorization on the PC must be removed in Mumio Server separately. Clearing app data or uninstalling also does not remotely delete PC records.</li>
+                <li><strong>Bluetooth pairings:</strong> Unpairing in the app removes its device record and attempts to remove the Android system pairing. Clearing app data or uninstalling does not guarantee removal of system pairings; you can manage them separately in Android Bluetooth settings.</li>
+                <li><strong>Text, audio, and images:</strong> Mumio does not create histories of these content types. Data held by recognition services, the Windows clipboard, and destination applications are governed by those services and settings. Removing a Mumio pairing or uninstalling the app does not delete these independent copies.</li>
+            </ul>
 
-        <h3>7. Contact Us</h3>
-        <p>For questions about this policy or data processing, contact the developer through <a href="https://github.com/howiedagg/Mumiopad/issues">Mumio GitHub Issues</a>.</p>
-    </div>
+            <h3>7. System and Third-Party Services</h3>
+            <ul>
+                <li><strong>System speech recognition:</strong> The provider and offline or online processing depend on the recognition service installed on the phone and its settings. This app does not enforce offline recognition. Transmission, retention, security, and deletion of audio and related request information depend on that provider's policy. You can check the phone's voice-input or recognition-service settings, or choose not to use voice input.</li>
+                <li><strong>Hostname resolution:</strong> If an entered or scanned address is a hostname, the app uses Android's system resolver to look up its IP address. DNS services may process the queried name and connection information. The query does not contain your control text, pairing token, or audio.</li>
+                <li><strong>Google Play:</strong> Editions installed through Google Play are distributed and updated by Google Play. The app has no developer-operated update checker. Google processes store-service data according to its settings and <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. This does not mean that the phone's speech-recognition provider is necessarily Google.</li>
+                <li><strong>Policy and support:</strong> This page is hosted on GitHub Pages, and the contact channel uses GitHub Issues. GitHub processes connections and information you actively provide under the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>.</li>
+            </ul>
+
+            <h3>8. Developer Contact and Policy Changes</h3>
+            <p>Developer: <strong>Mumio (GitHub: howiedagg)</strong>. For policy questions or requests for access, correction, deletion, or other rights under applicable law, use <a href="https://github.com/howiedagg/mumiopad-privacy-policy/issues">Mumio privacy-policy GitHub Issues</a>. The developer cannot remotely read or delete local data on your devices; you can manage it as described in Section 6.</p>
+            <p>This is a public discussion channel, and submitted content may be publicly visible. Provide only information needed to handle your request, and do not post input text, audio, clipboard content, or pairing credentials. The developer uses information you actively provide only to respond to and handle your request. Independently held copies are retained until the request is resolved and follow-up is no longer needed, then deleted; you can also request deletion. Retention and deletion of GitHub issues separately depend on the platform's features and policies.</p>
+            <p>This policy will be updated when actual data-processing practices change, with the last-updated date shown on this page.</p>
+        </section>
+    </main>
 </body>
 </html>
