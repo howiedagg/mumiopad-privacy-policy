@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Privacy policy for Mumio Server, the Windows wireless touchpad and keyboard companion. Mumio Server Windows 桌面版隱私權政策。">
+    <title>Mumio Server Privacy Policy / Windows 桌面版隱私權政策</title>
+    <style>
+        :root { color-scheme: light dark; --background: #fff; --text: #222; --heading: #333; --accent: #0066cc; --border: #ddd; --code: #f4f4f4; }
+        @media (prefers-color-scheme: dark) { :root { --background: #15171a; --text: #e5e7eb; --heading: #f3f4f6; --accent: #8ab4ff; --border: #42464d; --code: #252932; } }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.65; max-width: 860px; margin: 0 auto; padding: 24px; background: var(--background); color: var(--text); overflow-wrap: anywhere; }
+        h1 { color: var(--accent); border-bottom: 2px solid var(--accent); padding-bottom: 10px; line-height: 1.35; }
+        h2 { color: var(--heading); margin-top: 30px; }
+        h3 { color: var(--accent); }
+        section { margin-bottom: 44px; padding-bottom: 24px; border-bottom: 1px solid var(--border); }
+        code { background: var(--code); padding: 2px 6px; border-radius: 4px; }
+        ul { padding-left: 22px; }
+        li { margin-bottom: 10px; }
+        a { color: var(--accent); }
+        a:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+        nav a + a { margin-left: 20px; }
+        @media (max-width: 480px) { body { padding: 16px; } h1 { font-size: 1.75rem; } }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mumio Server Privacy Policy<br>Windows 桌面版隱私權政策</h1>
+        <p><strong>Last Updated / 最後更新日期:</strong> <time datetime="2026-10-12">2026-10-12</time></p>
+        <nav aria-label="Language / 語言"><a href="#zh-TW" lang="zh-TW">繁體中文</a><a href="#en" lang="en">English</a></nav>
+    </header>
+    <main>
+        <section lang="zh-TW" aria-labelledby="zh-TW">
+            <h2 id="zh-TW">繁體中文</h2>
+            <p>本政策適用於 <strong>Mumio Server Windows 桌面程式</strong>，包含 Microsoft Store 版與官方直接下載版。Mumio Server 接收使用者主動從配對手機傳來的指令，提供電腦滑鼠與鍵盤控制。Android 行動應用程式另適用於<a href="index.html">原有的 Mumio 隱私權政策</a>。</p>
+
+            <h3>1. 資料處理原則</h3>
+            <p>Mumio Server 不要求建立使用者帳號，程式不內建廣告、分析或遙測服務。滑鼠與鍵盤控制資料透過區域網路在您選擇的手機與電腦之間傳輸，不會自動傳送給開發者，也不會被出售或用於廣告。輸入文字、剪貼簿文字及裝置名稱可能包含個人資訊，因此本政策說明程式如何存取與處理這些資料。</p>
+
+            <h3>2. 存取與處理的資料及用途</h3>
+            <ul>
+                <li><strong>區域網路連線與探索：</strong>程式處理電腦與連線手機的區域 IP 位址，以建立連線及防止配對濫用。程式使用 mDNS 公告電腦名稱、區域 IP、伺服器識別碼、服務埠與支援的協定版本；同一區域網路中的裝置可接收這些探索資訊。</li>
+                <li><strong>配對與設定：</strong>程式在電腦本機保存伺服器 UUID、TLS 金鑰及憑證、已配對手機名稱、配對裝置識別碼、配對 token 的 SHA-256 雜湊、最後連線時間及使用者設定，例如介面語言。這些資料用於辨識已授權裝置、保護連線及保留設定。</li>
+                <li><strong>滑鼠與鍵盤輸入：</strong>程式接收並執行手機送來的移動、點擊、捲動、手勢、按鍵及文字指令，將輸入送至您正在控制的 Windows 應用程式。程式不建立或保存控制內容與輸入文字的歷史紀錄。</li>
+                <li><strong>剪貼簿文字：</strong>為完成文字貼上，程式會讀取當時可讀取的 Windows 剪貼簿文字，暫時將手機傳來的文字放入剪貼簿並執行貼上，然後嘗試還原先前的文字；沒有可還原文字時則清除暫放的內容。原有剪貼簿文字不會傳回手機或自動傳給開發者，也不會保存為剪貼簿歷史。</li>
+                <li><strong>執行與錯誤資訊：</strong>程式在執行期間處理連線狀態與錯誤訊息，可能包括裝置名稱、區域 IP 或錯誤細節，用於呈現狀態及處理連線問題。程式不會自動將這些訊息上傳給開發者。</li>
+            </ul>
+            <p>文字可能包含您主動輸入的姓名、電話或其他個人資訊。貼上後，目標 Windows 應用程式以及 Windows 剪貼簿歷程或同步功能（若您啟用）如何保存或傳輸文字，取決於其功能、設定與隱私權政策。</p>
+
+            <h3>3. 使用、傳輸與揭露</h3>
+            <p>上述資料用於提供您主動要求的配對、裝置連線、滑鼠與鍵盤控制、設定保存及問題處理。您可以拒絕配對請求、停止傳送輸入、解除配對，或退出 Mumio Server 以停止連線服務。</p>
+            <p>控制內容只交給您選擇的電腦及目標應用程式；mDNS 探索資訊則會公告至所在區域網路。Mumio Server 不會自動將控制內容、剪貼簿內容、配對憑證或裝置清單提供給開發者、廣告商或分析服務。更新、政策網頁及您主動提出的支援請求涉及的第三方服務見第 6、7 節。</p>
+
+            <h3>4. 儲存與安全</h3>
+            <p>配對與設定資料保存在目前 Windows 使用者的本機資料範圍。直接下載版使用 <code>%APPDATA%\Mumiopad</code>；Microsoft Store 版使用 Windows 管理的應用程式資料位置，Windows 可能將相同的邏輯路徑重新導向至套件專屬資料夾。資料不會為 Mumio 帳號建立雲端備份。</p>
+            <p>Wi-Fi 控制連線使用 WSS/TLS，加上電腦公鑰驗證、使用者確認配對及配對 token 驗證。電腦端只保存 token 的 SHA-256 雜湊，不保存原始 token。TLS 私鑰與設定檔由 Windows 使用者帳戶及檔案存取控制管理，程式不另外對這些本機檔案提供應用程式層的加密。</p>
+
+            <h3>5. 資料保留、存取與使用者控制</h3>
+            <ul>
+                <li><strong>查看與撤銷配對：</strong>您可在主畫面或系統匣的裝置清單查看配對裝置，並解除單一配對或清除所有配對。解除配對會刪除該電腦保存的裝置配對紀錄並撤銷該裝置的存取權限；不會刪除其他程式已收到的文字或手機端獨立保存的資料。</li>
+                <li><strong>保留期間：</strong>配對紀錄保留至您解除或清除配對；伺服器身分與設定保留至您刪除相應本機資料。控制指令與剪貼簿暫存文字只用於執行當次操作，程式不持久保存這些內容。</li>
+                <li><strong>刪除本機資料：</strong>直接下載版解除安裝後，設定可能仍保留；完整刪除前請先退出程式，再刪除 <code>%APPDATA%\Mumiopad</code>。Store 版解除安裝時，由 Windows 清除套件管理的資料；若曾使用直接下載版，該版本留下的資料仍需另外處理。請只刪除您要移除之版本的資料。</li>
+                <li><strong>其他隱私請求：</strong>您可透過第 7 節的公開聯絡入口提出適用法律下的資料存取、更正、刪除或其他隱私請求。開發者無法遠端存取您電腦上的本機配對資料、剪貼簿或輸入內容；這些資料由您在自己的裝置上控制。</li>
+            </ul>
+
+            <h3>6. 更新與第三方服務</h3>
+            <ul>
+                <li><strong>Microsoft Store 版：</strong>安裝與更新由 Microsoft Store 管理，程式不使用直接下載版的 GitHub 更新器。Microsoft 可能依其服務設定與政策處理下載、裝置或診斷資料；詳見 <a href="https://privacy.microsoft.com/privacystatement">Microsoft 隱私權聲明</a>。</li>
+                <li><strong>直接下載版：</strong>程式會連線至 GitHub Releases 檢查及下載更新，並在本機記錄更新檢查時間。GitHub 會處理提供服務所需的網路資料，例如 IP 位址與請求資訊。更新請求不包含您輸入的文字、剪貼簿內容或配對憑證。</li>
+                <li><strong>Store 報表：</strong>Microsoft 可能向開發者提供商店統計或錯誤報告。若開發者收到這些資料，僅用於改善程式及排除問題，不用於辨識個別使用者或廣告。若 Microsoft 提供的錯誤報告含個人資訊，開發者依 Microsoft 開發者協議在安全且限制存取的環境處理，並於收到後 30 天內刪除該個人資訊，或依 Microsoft 要求提前刪除。</li>
+                <li><strong>政策網頁與聯絡入口：</strong>本頁由 GitHub Pages 提供，聯絡入口使用 GitHub Issues。GitHub 依 <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub 隱私權聲明</a>處理連線及您提供的資料。</li>
+            </ul>
+
+            <h3>7. 聯絡開發者與政策更新</h3>
+            <p>開發者：<strong>Mumio（GitHub：howiedagg）</strong>。政策或資料處理問題可透過 <a href="https://github.com/howiedagg/mumiopad-privacy-policy/issues">Mumio 隱私權政策 GitHub Issues</a>提出。此入口為公開討論；您提交的內容可能公開顯示，請只提供處理問題所需的資訊，不要張貼輸入文字、剪貼簿內容、配對 token 或 TLS 私鑰。開發者僅將您主動提供的支援資料用於回覆與處理請求，自行持有的副本保留至請求處理完成且不再需要後續追蹤，之後刪除；您也可提出刪除請求。GitHub 上公開議題的保留與刪除另受其平台功能及政策影響。</p>
+            <p>本政策會隨實際資料處理方式調整，並更新本頁的最後更新日期。</p>
+        </section>
+
+        <section lang="en" aria-labelledby="en">
+            <h2 id="en">English</h2>
+            <p>This policy applies to <strong>Mumio Server for Windows</strong>, including the Microsoft Store edition and the official direct-download edition. Mumio Server receives commands that you intentionally send from a paired phone to control your PC's mouse and keyboard. The Android mobile app is covered by the <a href="index.html">existing Mumio privacy policy</a>.</p>
+
+            <h3>1. Data Processing Principles</h3>
+            <p>Mumio Server does not require a user account and has no built-in advertising, analytics, or telemetry services. Mouse and keyboard control data travels over your local network between your chosen phone and PC. It is not automatically sent to the developer, sold, or used for advertising. Input text, clipboard text, and device names may contain personal information, so this policy explains how the application accesses and processes them.</p>
+
+            <h3>2. Data Accessed and Processed, and Its Purpose</h3>
+            <ul>
+                <li><strong>Local network connections and discovery:</strong> The application processes the PC's and connecting phone's local IP addresses to establish connections and prevent pairing abuse. Through mDNS, it advertises the PC name, local IP addresses, server identifier, service port, and supported protocol versions. Devices on the same local network can receive this discovery information.</li>
+                <li><strong>Pairing and preferences:</strong> The application stores the server UUID, TLS key and certificate, paired phone names, pairing device identifiers, SHA-256 hashes of pairing tokens, last-connection times, and preferences such as interface language locally on the PC. These data identify authorized devices, protect connections, and preserve preferences.</li>
+                <li><strong>Mouse and keyboard input:</strong> The application receives and executes movement, click, scroll, gesture, key, and text commands from the phone, sending input to the Windows application you are controlling. It does not create or retain a history of control content or input text.</li>
+                <li><strong>Clipboard text:</strong> To paste text, the application reads the Windows clipboard text that is accessible at that moment, temporarily places text received from the phone on the clipboard, and pastes it. It then attempts to restore the previous text, or clears the temporary content when no text can be restored. Existing clipboard text is not sent back to the phone or automatically sent to the developer, and the application does not save a clipboard history.</li>
+                <li><strong>Runtime and error information:</strong> During execution, the application processes connection status and error messages, which may include device names, local IP addresses, or error details, to display status and handle connection problems. It does not automatically upload these messages to the developer.</li>
+            </ul>
+            <p>Text may include names, telephone numbers, or other personal information that you intentionally enter. After pasting, how the destination Windows application or Windows clipboard history or synchronization features (if you enable them) retain or transmit text depends on their features, settings, and privacy policies.</p>
+
+            <h3>3. Use, Transmission, and Disclosure</h3>
+            <p>The data described above is used to provide the pairing, device connection, mouse and keyboard control, preference storage, and troubleshooting functions that you actively request. You can reject pairing requests, stop sending input, revoke pairings, or quit Mumio Server to stop the connection service.</p>
+            <p>Control content is delivered only to your chosen PC and destination application; mDNS discovery information is advertised to the local network. Mumio Server does not automatically disclose control content, clipboard content, pairing credentials, or device lists to the developer, advertisers, or analytics services. Third-party services involved in updates, this policy page, and support requests you initiate are described in Sections 6 and 7.</p>
+
+            <h3>4. Storage and Security</h3>
+            <p>Pairing data and preferences are stored in the current Windows user's local data area. The direct-download edition uses <code>%APPDATA%\Mumiopad</code>. The Microsoft Store edition uses Windows-managed application storage; Windows may redirect the same logical path to a package-specific folder. These data are not backed up to a Mumio cloud account.</p>
+            <p>Wi-Fi control connections use WSS/TLS, PC public-key verification, user-confirmed pairing, and pairing-token authentication. The PC stores SHA-256 token hashes rather than raw tokens. TLS private keys and configuration files are managed through the Windows user account and file access controls; the application does not provide additional application-level encryption for these local files.</p>
+
+            <h3>5. Retention, Access, and User Controls</h3>
+            <ul>
+                <li><strong>Viewing and revoking pairings:</strong> You can view paired devices in the main window or system-tray device list and remove one pairing or clear all pairings. Removing a pairing deletes that device's pairing record on the PC and revokes its access. It does not remove text already received by other applications or data independently stored on the phone.</li>
+                <li><strong>Retention:</strong> Pairing records remain until you remove or clear them. Server identity and preferences remain until you delete the corresponding local data. Control commands and temporary clipboard text are used only to execute the current operation; the application does not persist them.</li>
+                <li><strong>Deleting local data:</strong> The direct-download edition may leave preferences after uninstalling. To remove them completely, first quit the application and then delete <code>%APPDATA%\Mumiopad</code>. When the Store edition is uninstalled, Windows removes package-managed data. Data left by a previously used direct-download edition must be handled separately. Delete only the data for the edition you intend to remove.</li>
+                <li><strong>Other privacy requests:</strong> You can use the public contact channel in Section 7 to request access, correction, deletion, or other privacy rights available under applicable law. The developer cannot remotely access local pairing data, clipboard content, or input text on your PC; you control those data on your own devices.</li>
+            </ul>
+
+            <h3>6. Updates and Third-Party Services</h3>
+            <ul>
+                <li><strong>Microsoft Store edition:</strong> Installation and updates are managed by Microsoft Store. The application does not use the direct-download edition's GitHub updater. Microsoft may process download, device, or diagnostic data according to its service settings and policies; see the <a href="https://privacy.microsoft.com/privacystatement">Microsoft Privacy Statement</a>.</li>
+                <li><strong>Direct-download edition:</strong> The application connects to GitHub Releases to check for and download updates and records update-check times locally. GitHub processes network data needed to provide the service, such as IP addresses and request information. Update requests do not include input text, clipboard content, or pairing credentials.</li>
+                <li><strong>Store reports:</strong> Microsoft may provide store statistics or error reports to the developer. If received, these data are used only to improve the application and resolve problems, not to identify individual users or for advertising. If error reports provided by Microsoft contain personal information, the developer handles it in a secure environment with restricted access and deletes that personal information within 30 days of receipt, or earlier if Microsoft requests, as required by the Microsoft App Developer Agreement.</li>
+                <li><strong>Policy page and contact channel:</strong> This page is hosted on GitHub Pages, and the contact channel uses GitHub Issues. GitHub processes connection data and information you provide under the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>.</li>
+            </ul>
+
+            <h3>7. Developer Contact and Policy Changes</h3>
+            <p>Developer: <strong>Mumio (GitHub: howiedagg)</strong>. For policy or data-processing questions, use <a href="https://github.com/howiedagg/mumiopad-privacy-policy/issues">Mumio privacy-policy GitHub Issues</a>. This is a public discussion channel; submitted content may be publicly visible. Provide only information needed to address your question, and do not post input text, clipboard content, pairing tokens, or TLS private keys. The developer uses support information you actively provide only to respond to and handle your request. Copies held independently by the developer are retained until the request is resolved and follow-up is no longer needed, then deleted; you can also request their deletion. Retention and deletion of public issues on GitHub separately depend on the platform's features and policies.</p>
+            <p>This policy will be updated when actual data-processing practices change, with the last-updated date shown on this page.</p>
+        </section>
+    </main>
+</body>
+</html>
